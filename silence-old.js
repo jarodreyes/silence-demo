@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.post('/sms', (req, res) => {
   let body = req.body.Body;
   let note = body[0];
-  if ((req.body.From).indexOf("206") >= 0) { note = 'hello' };
+  if ((req.body.From).indexOf("212") >= 0) { note = 'nyc' };
   if ((req.body.From).indexOf("415") >= 0) { note = 'sf' };
   console.log(note);
   CFonts.say(body);
